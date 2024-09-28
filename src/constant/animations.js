@@ -45,7 +45,7 @@ export const clipPathVariant =()=>({
 })
 export const fromLeft = (direction)=>({
   hidden:{
-    x:  direction === 'left' ? '100%' : direction === 'right' ? '-100%' : 0,
+    x:  direction === 'left' ? '100px' : direction === 'right' ? '-100px' : 0,
     opacity:0
   },show: {
     x: 0,
