@@ -20,7 +20,7 @@ const Hero = () => {
           global <span className="text-[#EF001C]">production</span> <br />
           agency
         </motion.h1>
-        <motion.div variants={fromLeft(0)} className="flex justify-between pt-6 flex-wrap mx-auto md:mx-0 gap-10">
+        <motion.div variants={fromLeft('left')} className="flex justify-between pt-6 flex-wrap mx-auto md:mx-0 gap-10">
           <div className="w-full md:max-w-[550px] ">
             <p className="font-semibold text-center md:text-left">
               Designed with the specific needs of large B2B enterprises in mind,
