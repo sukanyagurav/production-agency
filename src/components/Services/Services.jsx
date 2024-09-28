@@ -8,7 +8,7 @@ const Services = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   return (
     <Card>
-      <motion.section  variants={staggerContainer}  className="my-[5rem]" initial="hidden" whileInView="show" viewport={{once:false, amount:0.25}}>
+      <motion.section  variants={staggerContainer}  className="my-[5rem] overflow-hidden" initial="hidden" whileInView="show" viewport={{once:false, amount:0.25}}>
         <motion.h2
           className="text-4xl font-bold"
           variants={clipPathVariant()}
