@@ -12,8 +12,8 @@ const Header = () => {
     setIsOpen(!isOpen);
   }
   return (
-    <header className="border-b-[1px] overflow-hidden border-[#0000001A] ">
-      <Card classes="flex justify-between items-center p-5 relative">
+    <header className="border-b-[1px] overflow-hidden border-[#0000001A] relative">
+      <Card classes="flex justify-between items-center p-5 ">
         <a href="#none">
           <img
             src={logo}
@@ -60,7 +60,7 @@ const Header = () => {
           </ul>
         
       </Card>
-      {isOpen && <div className="absolute top-0 left-0 bottom-0 bg-[#474849ab] z-20 w-full h-full" onClick={()=>setIsOpen(false)}></div>}
+     
     </header>
   );
 };
