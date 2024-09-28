@@ -45,10 +45,10 @@ export const clipPathVariant =()=>({
 })
 export const fromLeft = (direction)=>({
   hidden:{
-    x:  direction === 'left' ? '100px' : direction === 'right' ? '-100px' : 0,
+    y:  direction === 'left' ? '100px' : direction === 'right' ? '-100px' : 0,
     opacity:0
   },show: {
-    x: 0,
+    y: 0,
   opacity:1,
     transition: {
       type: 'spring',
