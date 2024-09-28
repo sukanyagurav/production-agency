@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navLink:hover .navIcon {
+  @apply text-[#EF001C] transition duration-300  rotate-90;
+}
+
+
+.slider {
+  height: var(--height);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+.item {
+  width: var(--width);
+  height: 70px;
+ 
+  animation: autoRun 20s linear infinite;
+  animation-delay: calc((20s / var(--quantity)) * (var(--position) - 1));
+}
+
+input {
+  background: transparent;
+}
+footer {
+  .links li:first-child {
+    @apply font-bold mb-3 text-[1.1rem];
+  }
+  .links li:not(:first-child) {
+    @apply mb-3;
+  }
+  a{
+    @apply transition-all duration-300;
+  }
+  a:hover{
+    @apply text-[#EF001C] border-b-2 border-[#EF001C];
+  }
+}
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
