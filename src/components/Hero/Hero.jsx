@@ -14,7 +14,7 @@ import { fromLeft, staggerContainer,textVariant } from "../../constant/animation
 const Hero = () => {
   return (
     <Card classes={"my-10 px-5 my-10"} >
-      <motion.section variants={staggerContainer} initial="hidden" whileInView="show" viewport={{once:false, amount:0.25}}>
+      <motion.section variants={staggerContainer} className="overflow-hidden" initial="hidden" whileInView="show" viewport={{once:false, amount:0.25}}>
         <motion.h1 variants={textVariant(0)} className="text-[2.5rem] text-center  md:text-left md:text-7xl md:leading-[6rem]	 uppercase">
           we are a <br />
           global <span className="text-[#EF001C]">production</span> <br />
