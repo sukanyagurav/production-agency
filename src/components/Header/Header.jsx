@@ -44,7 +44,7 @@ const Header = () => {
        
           
           <ul
-            className={`flex justify-center flex-col fixed z-10 h-[100vh] top-0 bottom-0 w-[50%] transition-all bg-[#F1F2F6] duration-300 translate-[999px] gap-5 items-center md:hidden ${
+            className={`flex justify-center flex-col fixed z-10 h-[100vh] top-0 bottom-0 w-[60%] transition-all bg-[#F1F2F6] duration-300 translate-[999px] gap-5 items-center md:hidden ${
               isOpen ? "right-0" : "-right-[9999px]"
             }`}
           >
