@@ -3,7 +3,7 @@
 ![Design preview for Production agency Site](./public/assets/desktop%20view.png)
 
 ## Links
-- [Live URL](https://merchmaze5867.netlify.app/)
+- [Live URL](https://productionagency5867.netlify.app/)
 - [Github URL](https://github.com/sukanyagurav/production-agency)
 
 ## Overview
@@ -16,7 +16,7 @@ This project features a fully responsive website built using modern front-end te
 
 ## Built with
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 ## Available Scripts
 

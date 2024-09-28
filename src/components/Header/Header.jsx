@@ -12,8 +12,8 @@ const Header = () => {
     setIsOpen(!isOpen);
   }
   return (
-    <header className="border-b-[1px] overflow-hidden border-[#0000001A] relative">
-      <Card classes="flex justify-between items-center p-5 ">
+    <header className="border-b-[1px] overflow-hidden border-[#0000001A] ">
+      <Card classes="flex justify-between items-center p-5 relative">
         <a href="#none">
           <img
             src={logo}
@@ -44,7 +44,7 @@ const Header = () => {
        
           
           <ul
-            className={`flex justify-center flex-col fixed z-10 h-[100vh] top-0 bottom-0 w-[50%] transition-all shadow-lg bg-[#F1F2F6]  duration-300 translate-[999px] gap-5 items-center md:hidden ${
+            className={`flex justify-center flex-col fixed z-30 h-[100vh] top-0 bottom-0 w-[50%] transition-all shadow-lg bg-[#F1F2F6]  duration-300 translate-[999px] gap-5 items-center md:hidden ${
               isOpen ? "right-0" : "-right-[9999px]"
             }`}
           >
@@ -58,8 +58,9 @@ const Header = () => {
             </li>
             <li><button className="absolute top-[1.8rem] right-[2rem] block  md:hidden text-2xl" onClick={()=>setIsOpen(false)}><RxCross1 /></button></li>
           </ul>
-       
+        
       </Card>
+      {isOpen && <div className="absolute top-0 left-0 bottom-0 bg-[#474849ab] z-20 w-full h-full" onClick={()=>setIsOpen(false)}></div>}
     </header>
   );
 };
