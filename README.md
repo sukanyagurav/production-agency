@@ -1,4 +1,4 @@
-# MerchMaze
+# Production agency website
 
 ![Design preview for Production agency Site](./public/assets/desktop%20view.png)
 
