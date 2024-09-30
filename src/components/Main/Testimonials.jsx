@@ -3,7 +3,8 @@ import Card from "../../UI/Card";
 import Heading2 from "../../UI/Heading2";
 import { testimonials } from "../../constant";
 import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
-
+import { fromLeft, staggerContainer,textVariant } from "../../constant/animations";
+import { motion } from "framer-motion";
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -20,20 +21,21 @@ const Testimonials = () => {
   return (
     <Card classes="mb-[8rem]">
       <Heading2 classes="text-lg">Testimony from our partners</Heading2>
-      <div className="w-full h-full flex  overflow-hidden mt-8">
+      <div   className="w-full h-full flex  overflow-hidden mt-8">
         
         {testimonials.map((testimonial,i) => (
-          <div className={` w-full h-full gap-9 grid grid-cols-1 overflow-hidden transition-all durartion-100  lg:grid-cols-[450px_1fr] shrink-0 grow-0 `} 
+          <motion.div className={` w-full h-full gap-9 grid grid-cols-1 overflow-hidden transition-all durartion-100  lg:grid-cols-[450px_1fr] shrink-0 grow-0 `} 
           style={{ translate: `${-100 * (currentIndex)}%`,}}
-           key={i}>
-            <div>
+           key={i} variants={staggerContainer} initial="hidden" whileInView="show" viewport={{once:false, amount:0.25}}>
+            <motion.div variants={fromLeft('right')}>
               <img
+
                 src={testimonial.userImage}
                 alt={testimonial.userName}
                 className="w-full h-[400px] object-cover"
               />
-            </div>
-            <div className="flex flex-col justify-between">
+            </motion.div>
+            <motion.div variants={textVariant(0)} className="flex flex-col justify-between">
               <p className="text-[1.1rem] font-[600]">{testimonial.description}</p>
 
               <div className="flex justify-between items-start md:items-center flex-col md:flex-row">
@@ -54,8 +56,8 @@ const Testimonials = () => {
                   </button>
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
     </Card>
